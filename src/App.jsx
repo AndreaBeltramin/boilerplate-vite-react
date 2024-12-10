@@ -1,13 +1,15 @@
 // import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <>
-      <div className="container">
-        <h1 className="mt-5">Hello World</h1>
-      </div>
-    </>
-  );
+	return;
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element="{<HomePage/>}" />
+			<Route path="/aboutUs" element="{<AboutUsPage/>}" />
+			<Route path="/listProducts" element="{<ListProductsPage/>}" />
+		</Routes>
+	</BrowserRouter>;
 }
 
 export default App;
